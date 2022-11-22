@@ -10,6 +10,7 @@
 		<script>
 			var timerId; 
 			function fun1() {
+				console.log("fun1() 실행 시작 ");
 				timerId = window.setInterval(function() {
 					console.log("서버로 ");
 					console.log("새로운 데이터1을 요청합니다.");
@@ -21,6 +22,8 @@
 					console.log("서버로 ");
 					console.log("새로운 데이터3을 요청합니다.");
 				}, 1000);
+				
+				console.log("fun1() 실행 종료 ");
 			}
 			
 			function callback() {
